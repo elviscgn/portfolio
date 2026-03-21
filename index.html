@@ -1,229 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elvis Chege — Software Engineer</title>
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
-    
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/responsive.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elvis Chege - Software Engineer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400;500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/sections.css"/>
+  <link rel="stylesheet" href="css/responsive.css"/>
 </head>
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <a href="#hero" class="nav-logo">ec_</a>
-        <ul class="nav-links">
-            <li><a href="#projects">Work</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="https://github.com/elviscgn" target="_blank" rel="noopener">GitHub</a></li>
-        </ul>
-    </nav>
+  <canvas id="grain"></canvas>
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero-bg-text" aria-hidden="true">BUILD</div>
-        <div class="hero-content">
-            <div class="hero-flag fade-in d1">
-                <span>🇰🇪</span><span>→</span><span>🇿🇦</span>
-                &nbsp;·&nbsp; I AM · 21
-            </div>
-            <h1 class="hero-name fade-in d2">ELVIS<br>CHEGE</h1>
-            <p class="hero-tagline fade-in d3">
-                A Self-taught programmer. Obsessed with low level languages. 
-                My lifelong mission is to build software that makes <em>Africa</em> a better place.
-            </p>
-            <div class="hero-bottom fade-in d4">
-                <div class="hero-stack">
-                    <span class="stack-tag">Rust</span>
-                    <span class="stack-tag">Go</span>
-                    <span class="stack-tag">Java</span>
-                    <span class="stack-tag">Python</span>
-                    <span class="stack-tag">TypeScript</span>
-                    <span class="stack-tag">Zig</span>
-                </div>
-                <div class="hero-cta">
-                    <a href="#projects" class="btn btn-fill">View Work</a>
-                    <a href="#contact" class="btn">Get in Touch</a>
-                </div>
-            </div>
+  <nav>
+    <a href="#hero" class="nav-logo">ec_</a>
+    <ul class="nav-links">
+      <li><a href="#projects">Work</a></li>
+      <li><a href="#now">Now</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://github.com/elviscgn" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg" aria-hidden="true">BUILD</div>
+    <div class="hero-content">
+      <div class="hero-flag fi d1">
+        <span>🇰🇪</span><span>→</span><span>🇿🇦</span>&nbsp;·&nbsp;WeThinkCode_ · 21
+      </div>
+      <h1 class="hero-name fi d2">ELVIS<br>CHEGE</h1>
+      <p class="hero-tagline fi d3">
+        Self-taught since 13. I love <strong>frontend, backend, and systems programming</strong>.
+        Rust and Zig are my thing. I make games too, and I care about building
+        software that actually makes life better for Africans.
+      </p>
+      <div class="hero-bottom fi d4">
+        <div class="hero-stack">
+          <span class="stack-tag">Rust</span>
+          <span class="stack-tag">Go</span>
+          <span class="stack-tag">Java</span>
+          <span class="stack-tag">Python</span>
+          <span class="stack-tag">TypeScript</span>
+          <span class="stack-tag">Zig</span>
         </div>
-    </section>
-
-
-    <!-- Identity Section -->
-    <section id="identity">
-        <div class="identity-photo">
-            <img src="assets/images/avatar-placeholder.jpg" alt="Elvis Chege">
-            <span class="photo-label">Johannesburg, ZA</span>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-fill">View Work</a>
+          <a href="#contact" class="btn">Get in Touch</a>
         </div>
-        <div class="identity-info">
-            <div>
-                <h2>Who<br>I Am</h2>
-                <p class="identity-bio">
-                    Started writing code out of curiosity in Kenya. Never stopped.
-                    Now at <strong>WeThinkCode_</strong> in Johannesburg — one of Africa's most competitive software engineering programmes — and still building side projects at midnight.
-                    <br><br>
-                    I go deep. <strong>Low-level systems</strong>, <strong>distributed infrastructure</strong>, <strong>machine learning</strong> — I don't pick a lane, I build across all of them.
-                </p>
-            </div>
-            <div class="identity-stats">
-                <div class="stat-item">
-                    <div class="stat-num">35+</div>
-                    <div class="stat-label">Repositories</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-num">6+</div>
-                    <div class="stat-label">Languages</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-num">21</div>
-                    <div class="stat-label">Years Old</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-num">∞</div>
-                    <div class="stat-label">Curiosity</div>
-                </div>
-            </div>
-        </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Featured Projects Section -->
-    <section>
-        <div class="section-header">
-            <div>
-                <div class="section-label">Selected Work</div>
-                <div class="section-title">FEATURED<br>PROJECTS</div>
-            </div>
-        </div>
-    </section>
+  <!-- IDENTITY -->
+  <section id="identity">
+    <div class="id-photo">
+      <img id="avatar" src="" alt="Elvis Chege"/>
+      <span class="id-photo-label">Johannesburg, ZA</span>
+    </div>
+    <div class="id-info">
+      <div>
+        <h2 class="reveal">Who<br>I Am</h2>
+        <p class="id-bio reveal s1">
+          Moved from Kiambu, Kenya to Johannesburg, South Africa in 2012 when I was 8. Grew up here.
+          At 13 I found a book called <strong>Get Coding! Kids</strong> and I was immediately hooked.
+          I had no bootcamp, no tutor. Just teen me grinding hours figuring it out.
+          <br><br>
+          I am now at <strong>WeThinkCode_</strong>. In terms of my work I go wide: systems, backend, ML, game engines.
+          If it is hard to build, I want to know how it works.
+          <br><br>
+          I also write coding exercises for the peers I mentor on the side.
+        </p>
+      </div>
+      <div class="id-stats reveal s2">
+        <div><div class="stat-n">13</div><div class="stat-l">Age I started</div></div>
+        <div><div class="stat-n">35+</div><div class="stat-l">Projects</div></div>
+        <div><div class="stat-n">6+</div><div class="stat-l">Languages</div></div>
+        <div><div class="stat-n">∞</div><div class="stat-l">Curiosity</div></div>
+      </div>
+    </div>
+  </section>
 
-    <section id="projects">
-        <div class="featured-grid">
-            <a href="https://github.com/elviscgn/UkweliDB" target="_blank" rel="noopener" class="project-item">
-                <div class="project-num">01</div>
-                <div class="project-content">
-                    <div class="project-name">UKWELIDB</div>
-                    <div class="project-desc">
-                        A tamper-proof, verifiable, immutable database written from scratch in Rust.
-                        No existing engine — pure systems engineering. Built for the African context where data integrity cannot be assumed.
-                    </div>
-                    <div class="project-tags">
-                        <span class="project-tag">Rust</span>
-                        <span class="project-tag">Systems</span>
-                        <span class="project-tag">Database</span>
-                        <span class="project-tag">Africa Hackathon</span>
-                    </div>
-                </div>
-                <div class="project-arrow">↗</div>
-            </a>
+  <!-- FEATURED PROJECTS -->
+  <div class="sec-head reveal">
+    <div class="sec-label">Selected Work</div>
+    <div class="sec-title">FEATURED<br>PROJECTS</div>
+  </div>
 
-            <a href="https://github.com/elviscgn/AfyaAI" target="_blank" rel="noopener" class="project-item">
-                <div class="project-num">02</div>
-                <div class="project-content">
-                    <div class="project-name">AFYAAI</div>
-                    <div class="project-desc">
-                        A 3D AI avatar health companion. Real-time conversation, medical guidance, and a character that actually feels present.
-                        Full-stack — 3D rendering to backend AI integration.
-                    </div>
-                    <div class="project-tags">
-                        <span class="project-tag">JavaScript</span>
-                        <span class="project-tag">AI/ML</span>
-                        <span class="project-tag">3D</span>
-                        <span class="project-tag">Health Tech</span>
-                    </div>
-                </div>
-                <div class="project-arrow">↗</div>
-            </a>
+  <section id="projects">
+    <a href="https://github.com/elviscgn/UkweliDB" target="_blank" rel="noopener" class="proj reveal">
+      <div class="proj-n">01</div>
+      <div>
+        <div class="proj-name">UKWELIDB</div>
+        <div class="proj-desc">A tamper-proof immutable database written from scratch in Rust. No engine underneath it. Built for contexts where you cannot afford to assume data has not been touched. Won at an Africa hackathon. Ukweli means "truth" in Swahili.</div>
+        <div class="proj-tags">
+          <span class="proj-tag">Rust</span>
+          <span class="proj-tag">Systems</span>
+          <span class="proj-tag">Database</span>
+          <span class="proj-tag">Hackathon</span>
+        </div>
+      </div>
+      <div class="proj-arrow">↗</div>
+    </a>
 
-            <a href="https://github.com/elviscgn/Settlea" target="_blank" rel="noopener" class="project-item">
-                <div class="project-num">03</div>
-                <div class="project-content">
-                    <div class="project-name">SETTLEA</div>
-                    <div class="project-desc">
-                        Full online implementation of Settlers of Catan — one of the most mechanically complex board games in existence.
-                        Real-time multiplayer, game state management, and clean architecture in Go.
-                    </div>
-                    <div class="project-tags">
-                        <span class="project-tag">Go</span>
-                        <span class="project-tag">Multiplayer</span>
-                        <span class="project-tag">Game Dev</span>
-                        <span class="project-tag">Backend</span>
-                    </div>
-                </div>
-                <div class="project-arrow">↗</div>
-            </a>
+    <a href="https://github.com/elviscgn/AfyaAI" target="_blank" rel="noopener" class="proj reveal s1">
+      <div class="proj-n">02</div>
+      <div>
+        <div class="proj-name">AFYAAI</div>
+        <div class="proj-desc">A 3D AI health companion. You talk to it, it responds. Built full stack from the 3D avatar down to the AI backend. Afya is Swahili for health.</div>
+        <div class="proj-tags">
+          <span class="proj-tag">JavaScript</span>
+          <span class="proj-tag">AI</span>
+          <span class="proj-tag">3D</span>
+          <span class="proj-tag">Health Tech</span>
         </div>
-    </section>
+      </div>
+      <div class="proj-arrow">↗</div>
+    </a>
 
-    <!-- Other Projects Section -->
-    <section>
-        <div class="section-header">
-            <div>
-                <div class="section-label">More Builds</div>
-                <div class="section-title">EVERYTHING<br>ELSE</div>
-            </div>
+    <a href="https://github.com/elviscgn/Settlea" target="_blank" rel="noopener" class="proj reveal s2">
+      <div class="proj-n">03</div>
+      <div>
+        <div class="proj-name">SETTLEA</div>
+        <div class="proj-desc">Full online multiplayer implementation of Settlers of Catan in Go. One of the more mechanically complex board games out there. Real-time state, proper game logic, the whole thing.</div>
+        <div class="proj-tags">
+          <span class="proj-tag">Go</span>
+          <span class="proj-tag">Multiplayer</span>
+          <span class="proj-tag">Game Dev</span>
+          <span class="proj-tag">Backend</span>
         </div>
-    </section>
+      </div>
+      <div class="proj-arrow">↗</div>
+    </a>
+  </section>
 
-    <section id="other-projects">
-        <div class="other-grid">
-            <a href="https://github.com/elviscgn/Hokela" target="_blank" rel="noopener" class="other-item">
-                <div class="other-name">Hokela</div>
-                <div class="other-desc">Township spaza shop search engine with price comparison, youth-led delivery & order optimisation.</div>
-                <div class="other-lang">Go · Search Engine</div>
-            </a>
-            <!-- Add other project items similarly -->
+  <!-- NOW / IMPI -->
+  <section id="now">
+    <div class="now-grid">
+      <div class="now-left reveal">
+        <div class="now-live"><div class="now-dot"></div>Currently Building</div>
+        <div class="now-title">IMPI</div>
+        <p class="now-desc">
+          An isometric warfare strategy game written in <strong>Java</strong>.
+          The best way to learn a language is to build something that actually pushes it.
+          Impi is a zulu word for a regiment of warriors.
+        </p>
+        <div class="now-chips">
+          <span class="now-chip">Java</span>
+          <span class="now-chip">Game Dev</span>
+          <span class="now-chip">Isometric</span>
+          <span class="now-chip">Strategy</span>
         </div>
-    </section>
+      </div>
+      <div class="now-right reveal s1">
+        <div class="now-r">
+          <div class="now-r-label">Build log</div>
+          <div class="now-r-title">IMPI</div>
+          <div class="now-r-sub">Isometric warfare strategy · Java · In progress</div>
+          <div class="prog-label"><span>Progress</span><span>~5%</span></div>
+          <div class="prog-track">
+            <div class="prog-fill" id="impi-bar"></div>
+          </div>
+          <div class="milestones">
+            <!-- mark done by adding class="ms done" -->
+            <div class="ms"><div class="ms-dot"></div>Isometric renderer working</div>
+            <div class="ms"><div class="ms-dot"></div>Tile map system</div>
+            <div class="ms"><div class="ms-dot"></div>Unit movement logic</div>
+            <div class="ms"><div class="ms-dot"></div>Combat system</div>
+            <div class="ms"><div class="ms-dot"></div>AI opponents</div>
+            <div class="ms"><div class="ms-dot"></div>Multiplayer mode</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="skills-col">
-            <h3>Languages</h3>
-            <!-- Skills content -->
-        </div>
-        <div class="skills-col">
-            <h3>Domains</h3>
-            <!-- Domains content -->
-        </div>
-    </section>
+  <!-- OTHER PROJECTS -->
+  <div class="sec-head reveal">
+    <div class="sec-label">More Builds</div>
+    <div class="sec-title">EVERYTHING<br>ELSE</div>
+  </div>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="contact-bg" aria-hidden="true">TALK<br>TO ME</div>
-        <div class="contact-top">
-            <div class="contact-label">Contact</div>
-            <h2 class="contact-headline">LET'S BUILD<br>SOMETHING.</h2>
-            <p style="font-size:15px;color:var(--dim);max-width:440px;margin-bottom:32px;line-height:1.7">
-                Open to internships, graduate roles, and interesting problems.
-                If you're building something ambitious and especially in Africa's tech ecosystem. I want to hear about it
-            </p>
-            <div class="contact-links">
-                <a href="mailto:elvisndungu511@gmail.com" class="contact-link">elvisndungu511@gmail.com</a>
-                <a href="https://github.com/elviscgn" target="_blank" rel="noopener" class="contact-link">GitHub</a>
-                <a href="https://twitter.com/elviscgn" target="_blank" rel="noopener" class="contact-link">Twitter / X</a>
-            </div>
-        </div>
-        <div class="contact-footer">
-            <div class="footer-copy">© 2026 Elvis Chege · Johannesburg, South Africa</div>
-            <div class="footer-copy">
-                <span class="footer-flag">🇰🇪</span> Built in the diaspora
-            </div>
-        </div>
-    </section>
+  <section id="other">
+    <div class="other-grid">
+      <a href="https://github.com/elviscgn/Hokela" target="_blank" rel="noopener" class="other-card reveal">
+        <div class="other-n">Hokela</div>
+        <div class="other-d">Search engine connecting township spaza shops to customers. Price comparison, youth-led delivery, order optimisation.</div>
+        <div class="other-l">Go · Search Engine</div>
+      </a>
+      <a href="https://github.com/elviscgn/elimu" target="_blank" rel="noopener" class="other-card reveal s1">
+        <div class="other-n">Elimu</div>
+        <div class="other-d">Unified LMS consolidating scattered student systems. Courses, submissions, users, admin in one place.</div>
+        <div class="other-l">Java + Go · EdTech</div>
+      </a>
+      <a href="https://github.com/elviscgn/Chess" target="_blank" rel="noopener" class="other-card reveal s2">
+        <div class="other-n">Chess Engine</div>
+        <div class="other-d">A chess engine in Zig. Wrote it to understand move generation and evaluation at the lowest level.</div>
+        <div class="other-l">Zig · Systems</div>
+      </a>
+      <a href="https://github.com/elviscgn/MNIST" target="_blank" rel="noopener" class="other-card reveal">
+        <div class="other-n">MNIST</div>
+        <div class="other-d">Neural network for digit recognition. Built without hiding behind a framework to understand what is actually happening.</div>
+        <div class="other-l">Python · ML</div>
+      </a>
+      <a href="https://github.com/elviscgn/video_to_ascii" target="_blank" rel="noopener" class="other-card reveal s1">
+        <div class="other-n">Video to ASCII</div>
+        <div class="other-d">Converts video to ASCII art in real time. Started as a fun project and kept going.</div>
+        <div class="other-l">Python · Creative</div>
+      </a>
+      <a href="https://github.com/elviscgn/Sauti" target="_blank" rel="noopener" class="other-card reveal s2">
+        <div class="other-n">Sauti</div>
+        <div class="other-d">Active private project written in TypeScript. More soon.</div>
+        <div class="other-l">TypeScript · In Progress</div>
+      </a>
+    </div>
+  </section>
 
-    <!-- Scripts -->
-    <script src="js/animations.js"></script>
-    <script src="js/skills.js"></script>
-    <script src="js/main.js"></script>
+  <!-- SKILLS -->
+  <div class="sec-head reveal" style="border-top:none">
+    <div class="sec-label">Capabilities</div>
+    <div class="sec-title">WHAT I<br>WORK WITH</div>
+  </div>
+
+  <section id="skills">
+    <div class="sk-col reveal">
+      <h3>Languages</h3>
+      <div class="sk-row"><span class="sk-name">Rust</span><div class="sk-track"><div class="sk-bar" data-w="88"></div></div><span class="sk-note">Systems</span></div>
+      <div class="sk-row"><span class="sk-name">Go</span><div class="sk-track"><div class="sk-bar" data-w="85"></div></div><span class="sk-note">Backend</span></div>
+      <div class="sk-row"><span class="sk-name">Python</span><div class="sk-track"><div class="sk-bar" data-w="80"></div></div><span class="sk-note">ML + Scripts</span></div>
+      <div class="sk-row"><span class="sk-name">JavaScript / TS</span><div class="sk-track"><div class="sk-bar" data-w="75"></div></div><span class="sk-note">Frontend</span></div>
+      <div class="sk-row"><span class="sk-name">Java</span><div class="sk-track"><div class="sk-bar" data-w="65"></div></div><span class="sk-note">Learning now</span></div>
+      <div class="sk-row"><span class="sk-name">Zig</span><div class="sk-track"><div class="sk-bar" data-w="55"></div></div><span class="sk-note">Exploring</span></div>
+    </div>
+    <div class="sk-col reveal s1">
+      <h3>Domains</h3>
+      <div class="sk-row"><span class="sk-name">Systems Programming</span><div class="sk-track"><div class="sk-bar" data-w="90"></div></div></div>
+      <div class="sk-row"><span class="sk-name">Backend Engineering</span><div class="sk-track"><div class="sk-bar" data-w="85"></div></div></div>
+      <div class="sk-row"><span class="sk-name">Database Internals</span><div class="sk-track"><div class="sk-bar" data-w="75"></div></div></div>
+      <div class="sk-row"><span class="sk-name">Machine Learning</span><div class="sk-track"><div class="sk-bar" data-w="65"></div></div></div>
+      <div class="sk-row"><span class="sk-name">Game Development</span><div class="sk-track"><div class="sk-bar" data-w="60"></div></div></div>
+      <div class="sk-row"><span class="sk-name">Frontend</span><div class="sk-track"><div class="sk-bar" data-w="60"></div></div></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-bg" aria-hidden="true">TALK<br>TO ME</div>
+    <div class="contact-body reveal">
+      <div class="contact-label">Contact</div>
+      <h2 class="contact-hl">OPEN TO<br>WORK.</h2>
+      <p class="contact-sub">Looking for internships and graduate roles anywhere interesting. If you are building something in Africa's tech space and need someone who knows their way around a compiler, reach out.</p>
+      <div class="contact-links">
+        <a href="mailto:elvisndungu511@gmail.com" class="contact-link">elvisndungu511@gmail.com</a>
+        <a href="https://github.com/elviscgn" target="_blank" rel="noopener" class="contact-link">GitHub</a>
+        <a href="https://twitter.com/elviscgn" target="_blank" rel="noopener" class="contact-link">Twitter / X</a>
+      </div>
+    </div>
+    <div class="contact-footer">
+      <span class="footer-txt">2026 Elvis Chege · Johannesburg, South Africa</span>
+      <span class="footer-txt">🇰🇪 grown up in 🇿🇦</span>
+    </div>
+  </section>
+
+  <script src="js/grain.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/nav.js"></script>
+
 </body>
 </html>

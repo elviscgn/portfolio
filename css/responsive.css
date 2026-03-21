@@ -1,68 +1,30 @@
-@media (max-width: 768px) {
-    nav {
-        padding: 0 20px;
-    }
-    
-    #hero {
-        padding: 80px 20px 48px;
-    }
-    
-    .hero-bg-text {
-        display: none;
-    }
-    
-    .hero-bottom {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    #identity {
-        grid-template-columns: 1fr;
-    }
-    
-    .identity-photo {
-        height: 320px;
-        border-right: none;
-        border-bottom: 1px solid var(--gray);
-    }
-    
-    .identity-info {
-        padding: 32px 20px;
-    }
-    
-    .section-header {
-        flex-direction: column;
-        padding: 32px 20px 20px;
-    }
-    
-    #projects {
-        padding: 0 20px 60px;
-    }
-    
-    .project-item {
-        grid-template-columns: 48px 1fr auto;
-        gap: 12px;
-    }
-    
-    .project-num {
-        font-size: 32px;
-    }
-    
-    #other-projects {
-        padding: 0 20px 60px;
-    }
-    
-    #skills {
-        padding: 0 20px 60px;
-        grid-template-columns: 1fr;
-        gap: 0;
-    }
-    
-    #contact {
-        padding: 48px 20px 32px;
-    }
-    
-    .contact-bg {
-        display: none;
-    }
+@media(max-width:900px){
+  .now-grid{grid-template-columns:1fr}
+  .now-left{border-right:none;border-bottom:1px solid var(--gray)}
+}
+
+@media(max-width:768px){
+  nav{padding:0 20px}
+  body{cursor:auto}
+  #cursor,#cursor-ring{display:none}
+  #hero{padding:80px 20px 48px}
+  .hero-bg{display:none}
+  .hero-bottom{flex-direction:column;align-items:flex-start}
+  #identity{grid-template-columns:1fr}
+  .id-photo{height:320px;border-right:none;border-bottom:1px solid var(--gray)}
+  .id-info{padding:32px 20px}
+  .sec-head{padding:32px 20px 20px}
+  #projects{padding:0 20px 60px}
+  .proj{grid-template-columns:48px 1fr auto;gap:12px}
+  .proj-n{font-size:32px}
+  .now-left,.now-right{padding:40px 20px}
+  #other{padding:0 20px 60px}
+  #skills{padding:0 20px 60px;grid-template-columns:1fr;gap:0}
+  #contact{padding:48px 20px 32px}
+  .contact-bg{display:none}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .fi,.reveal{opacity:1;animation:none;transform:none;transition:none}
+  .sk-bar{transform:scaleX(1)}
 }
